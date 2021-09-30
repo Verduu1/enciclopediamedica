@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Bloc de notas" />
+        <meta name="author" content="Sara Llamas Payá y Pablo Verdú Tévar" />
+        <meta name="keywords" content="HTML5, web" />
+        <meta name="description" content="Formulario de contacto" />
+        <title>Formulario de Contacto</title>
+    </head>
+    <body>
+        <!--Formulario de Contacto-->
+        <h1>Enciclopedia médica online</h1>
+        <a href="../index.html">
+            <img src="../imagenes/cabecera.jpg" alt="Logo de la enciclopedia médica" />
+        </a>
+        <h2>Formulario de Contacto</h2>
+        <form action="mensajeContacto.html">
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required><br>
+            <label for="pregunta">Comentario o Pregunta</label>
+            <input type="text" id="pregunta" name=pregunta required><br>
+            <label for="yosoy">Yo soy:</label>
+            <select name="yosoy" id="yosoy">
+                <option value="paciente">Paciente</option>
+                <option value="científico">Científico</option>
+                <option value="medico">Médico</option>
+                <option value="educador">Educador</option>
+                <option value="fabricante">Fabricante</option>
+                <option value="periodista">Periodista</option>
+            </select><br>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha"><br>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="hombre" name="sexo" value="Hombre"><br>
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="mujer" name="sexo" value="Mujer"><br>
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="sexo" value="Otro"><br>
+            </fieldset>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="text" id="correo" name="correo"><br>
+            <label for="informacion">Deseo recibir más información</label>
+            <input type="checkbox" id="informacion" name="informacion" value="MasInfo"><br>
+            <input type="submit" id=enviar name="enviar" value="Enviar Formulario"><br>
+        </form>
+        <hr>Enciclopedia médica online, todos los derechos reservados  <br>
+        ©  Copyright <br>
+        Pablo Verdú y Sara Llamas <br>
+        2021-2022
+    </body>
+    </html>
