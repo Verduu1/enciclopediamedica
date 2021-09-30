@@ -20,8 +20,8 @@
             <input type="text" id="asunto" name="asunto" required><br>
             <label for="pregunta">Comentario o Pregunta</label>
             <input type="text" id="pregunta" name=pregunta required><br>
-            <label for="yo soy">Yo soy:</label>
-            <select name="yo soy">
+            <label for="yosoy">Yo soy:</label>
+            <select name="yosoy" id="yosoy">
                 <option value="paciente">Paciente</option>
                 <option value="científico">Científico</option>
                 <option value="medico">Médico</option>
@@ -31,10 +31,15 @@
             </select><br>
             <label for="fecha">Fecha de nacimiento:</label>
             <input type="date" id="fecha" name="fecha"><br>
-            <label for="sexo">Sexo:</label><br>
-            <input type="radio" id="hombre" name="sexo" value="Hombre">Hombre<br>
-            <input type="radio" id="mujer" name="sexo" value="Mujer">Mujer<br>
-            <input type="radio" id="otro" name="sexo" value="Otro">Otro<br>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="hombre" name="sexo" value="Hombre"><br>
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="mujer" name="sexo" value="Mujer"><br>
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="sexo" value="Otro"><br>
+            </fieldset>
             <label for="correo">Correo Electrónico:</label>
             <input type="text" id="correo" name="correo"><br>
             <label for="informacion">Deseo recibir más información</label>
