@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Bloc de notas" />
+        <meta name="author" content="Sara Llamas Payá y Pablo Verdú Tévar" />
+        <meta name="keywords" content="HTML5, web" />
+        <meta name="description" content="Formulario de contacto" />
+        <title>Formulario de Registro - EMO</title>
+    </head>
+    <body>
+        <!--Formulario de registro-->
+        <header>
+            <h1>Enciclopedia médica online</h1>
+            <a href="../index.html">
+                <figure>
+                    <img src="../imagenes/cabecera.jpg" alt="Logo de la enciclopedia médica" />
+                </figure>
+            </a>
+        </header>
+        <main>
+        <h2>Formulario de Registro</h2>
+        <p>*Campo requerido</p>
+        <form action="confirmacionRegistro.html">
+            <label for="nombreusuario">Nombre:*</label>
+            <input type="text" id="nombreusuario" name="nombre" required="required" placeholder="Nombre" /><br>
+            <label for="apellidosusuario">Apellidos:*</label>
+            <input type="text" id="apellidosusuario" name="apellidos" required="required" placeholder="Apellidos" /><br>
+            <label for="usuario">Nombre de Usuario:* </label> 
+            <input type="text" id="usuario" name="usuario" required="required" placeholder="Usuario_-123"/> <br>
+            <label for="email"> Email:*</label>
+            <input type="email" id="email" name="email" required="required" placeholder="ejemplo@mail.com"/><br>
+            <label for="contraseña">Contraseña:* </label>
+            <input type="password" id="contraseña" name="contraseña" required="required" placeholder="ejemplo Contraseña_12" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"/><br>
+            <label for="fechanacimiento">Fecha de Nacimiento:* </label> 
+            <input type="date" id="fechanacimiento" required="required"/> <br>
+            <label for="telefono">Teléfono:</label> 
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="Ej:123456789"><br>
+            <label for="interes">Interés en temas de medicina (Entre 0 y 100):</label>
+            <input type="range" id="interes" name="interes" min="0" max="100" step="10" value="0"><br>
+            <label for="titulos">Número de titulaciones relacionadas con la medicina:</label>
+            <input type="number" id="titulos" name="titulos" min="0" step="1" value="0"><br>
+            <label for="color">Color de personalización del perfil:</label>
+            <input type="color" id="color" name="color" value="#000000"><br>
+            <input type="submit" id=enviar name="enviar" value="Enviar Formulario"><br>
+        </form>
+        
+        </main>
+        <footer>
+            Enciclopedia médica online, todos los derechos reservados  <br>
+            ©  Copyright <br>
+            Pablo Verdú y Sara Llamas <br>
+            2021-2022
+        </footer>
+    </body>
+    </html>

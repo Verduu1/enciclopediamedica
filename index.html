@@ -10,8 +10,14 @@
     </head>
     <body>
         <!--Título y descripción de la página-->
-        <h1>Enciclopedia médica online</h1>
-        <img src="imagenes/cabecera.jpg" alt="Logo de la enciclopedia médica" />
+        <header>
+            <h1>Enciclopedia médica online</h1>
+            <figure>
+            <img src="imagenes/cabecera.jpg" alt="Logo de la enciclopedia médica" />
+            </figure>
+        </header>
+
+        <main>
         <p>Esta página web se ha diseñado en la asignatura de <strong>Usabilidad y Accesibilidad</strong> del grado de <strong>Ingeniería Biomédica</strong> en la <strong>Universidad de Alicante</strong> para poder obtener información
             sobre cualquier tema médico que exista. Para ello, se ha desarrollado una enciclopedia web que proporciona a los usuarios este tipo de información con los mejores artículos
             médicos que existen, acompañados de contenido multimedia como fotos y vídeos relacionados con los temas tratados para una mejor comprensión.
@@ -19,6 +25,7 @@
         <p>Desarrollada en 2021</p>
 
         <!--Índice alfabético de artículos-->
+        <nav>
         <h2>Índice alfabético de temas médicos</h2>
         <ul>
             <li> <a href="indices/letraA.html">A</a></li>
@@ -49,14 +56,19 @@
             <li> <a href="error/error404.html">Y</a></li>
             <li> <a href="error/error404.html">Z</a></li>
         </ul>
+        </nav>
 
         <!--Formularios-->
+        <nav>
         <h2>Opciones Avanzadas</h2>
         <a href="formularios/formularioContacto.html">Rellenar un Formulario de Contacto</a><br>
-        <a href="formularios/formularioBusqueda.html">Realizar una Búsqueda Avanzada</a>
+        <a href="formularios/formularioBusqueda.html">Realizar una Búsqueda Avanzada</a><br>
+        <a href="formularios/formularioRegistro.html">Crear una nueva cuenta</a>
+        </nav>
 
         <!--Apartado de temas destacados-->
         <h2><em>Temas destacados</em></h2>
+        <section>
         <h3>Accidente cerebrovascular</h3>
         <p>-Un accidente cerebrovascular o ataque cerebral sucede cuando se detiene el flujo sanguíneo a parte del cerebro.
             Al no poder recibir el oxígeno y nutrientes que necesitan, las células cerebrales comienzan a morir en minutos.
@@ -65,6 +77,8 @@
             Ver artículo completo
         </a>
         </p>
+        </section>
+        <section>
         <h3>Colesterol malo (HDL)</h3>
         <p>El <strong>colesterol</strong> es una sustancia cerosa y parecida a la grasa que se encuentra en todas las células de su cuerpo. Su hígado produce colesterol y también se encuentra en algunos alimentos,
             como carne y productos lácteos.
@@ -72,6 +86,8 @@
                 Ver artículo completo
             </a>
         </p>
+        </section>
+        <section>
         <h3>Hepatitis C</h3>
         <p>La <strong>hepatitis C</strong> es una infección del hígado causada por el virus de la hepatitis C (VHC). El VHC puede llevar a insuficiencia hepática,
             cáncer de hígado o enfermedad hepática crónica (cirrosis).
@@ -79,9 +95,13 @@
                 Ver artículo completo
             </a>
         </p>
-        <hr>Enciclopedia médica online, todos los derechos reservados  <br>
+        </section>
+        </main>
+        <footer>
+        Enciclopedia médica online, todos los derechos reservados  <br>
         ©  Copyright <br>
         Pablo Verdú y Sara Llamas <br>
         2021-2022
+        </footer>
     </body>
     </html>
